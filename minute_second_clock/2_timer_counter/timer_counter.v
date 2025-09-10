@@ -8,7 +8,7 @@ module timer_counter (
 	output reg [3:0] sec_unit, // hex[0]
 	output reg [3:0] sec_tens, // hex[1]
 	output reg [3:0] min_unit, // hex[2]
-	output reg [3:0] min_tens, // hex[3]
+	output reg [3:0] min_tens // hex[3]
 );
 	// process overflow BCD // of->overflow
 	wire sec_unit_of;
@@ -55,10 +55,9 @@ module timer_counter (
 				if (min_tens_of) begin
 					min_tens <= 4'h0;
 				end else begin
-					minute <= min_tens + 4'h1;
+					min_tens <= min_tens + 4'h1;
 				end
 			end
 		end
 	end
-	
 endmodule
