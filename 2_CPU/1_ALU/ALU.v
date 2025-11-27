@@ -21,7 +21,7 @@ always @(posedge clk)
 			5'b00001: Y = A + 1'b1;		// arithmetic operation
 			5'b00010: Y = A + B;
 			5'b00011: Y = A + B + 1'b1;
-			5'b00100: Y = A + ~B +1'b1;
+			5'b00100: Y = A + ~B + 1'b1;
 			5'b00101: Y = A + ~B + 1'b1;
 			5'b00110: Y = A - 1'b1;
 			5'b00111: Y = A;
