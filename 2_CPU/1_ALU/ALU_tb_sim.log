@@ -1,0 +1,29 @@
+VSIM 1> run -all
+# --------------------------------------------------
+# Starting ALU Testbench Simulation...
+# --------------------------------------------------
+# --> PASS. A= 5, B=10, cin=0 -> Y= 5
+# --> PASS. A= 9, B=10, cin=1 -> Y=10
+# --> PASS. A= 3, B= 4, cin=0 -> Y= 7
+# --> PASS. A= 3, B= 4, cin=1 -> Y= 8
+# --> PASS. A=10, B= 3, cin=0 -> Y= 7
+# --> PASS. A=10, B= 3, cin=1 -> Y= 7
+# --> PASS. A= 5, B= 8, cin=1 -> Y=13
+# --> PASS. A= 7, B= 3, cin=0 -> Y= 6
+# --> PASS. A= 0, B= 3, cin=0 -> Y=15
+# --> PASS. A=12, B= 3, cin=1 -> Y=12
+# --> PASS. A=10, B=12, cin=0 -> Y= 8
+# --> PASS. A=10, B=12, cin=0 -> Y=14
+# --> PASS. A=10, B=12, cin=0 -> Y= 6
+# --> PASS. A=10, B= 3, cin=0 -> Y= 5
+# --> PASS. A=15, B=15, cin=0 -> Y= 0
+# 
+# --- Testing Special Cases ---
+# PASS: Default case. Y is xxxx as expected.
+# PASS: 'en=0' test. Y correctly held its previous value.
+# 
+# --------------------------------------------------
+# All tests passed! Total errors: 0
+# --------------------------------------------------
+# ** Note: $finish    : E:/Digital_IC_Design & IP/Thuc_Hanh_VMS/2_TH_FPGA/2_CPU/1_ALU/ALU_tb.v(228)
+#    Time: 217 ns  Iteration: 0  Instance: /ALU_tb
